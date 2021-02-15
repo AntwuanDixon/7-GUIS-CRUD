@@ -1,9 +1,14 @@
+* {
+  font-family: Arial, sans-serif;
+  color: black;
+}
+
 .listbox-area {
-    padding: 20px;
+    padding: 15px;
     background: #eee;
     border: 1px solid #aaa;
     font-size: 0;
-    width: 500px;
+    width: 350px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -14,20 +19,22 @@
   display: inline-block;
   font-size: 14px;
   vertical-align: top;
-  width: 50%;
 }
 
 .left-area {
-  padding-right: 10px;
+  padding-right: 5px;
+  width: 45%;
 }
 
 .right-area {
-  padding-left: 10px;
+  padding-top: 30px;
+  padding-left: 5px;
+  width: 50%;
 }
 
 [data-role="option"] {
     display: block;
-    padding: 0 1em 0 1.5em;
+    padding: 0 .5em 0 .5em;
     position: relative;
     line-height: 1.8em;
 }
@@ -43,14 +50,36 @@
 }
 
 #rolodex-list {
-    width: 250px;
+  margin-top: 10px;
+  width: 150px;
 }
 
 #crud-btn-container {
-    float: right;
-    background-color: #bde4ff;
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
-#input-container {
-    float: right;
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+
+.input-field {
+  width: 90px;
+  height: 17px;
+  margin-left: 10px;
+}
+
+button {
+  margin-right: 10px;
+  width: 70px;
+  height: 25px;
+  border-radius: 5px;
+  border-color: darkgrey;
+}
+
+.filter {
+  margin-left: 10px;
+  width: 55px;
 }
