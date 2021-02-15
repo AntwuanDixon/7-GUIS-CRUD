@@ -9,18 +9,27 @@
 <body>
     <div class='listbox-area'>
         <div class='left-area'>
-            <span id='people-header'>
-                Filter
+            <span class='input-label' id='filter'>
+                Filter prefix:
             </span>
             <input class='filter' name='filter'>
             <select id='rolodex-list' name="rolodex-list" size='5'>
-                <option class='person-entry' value='person-0'>Person 0</option>
 
             </select>
         </div>
-        <div id='input-container'>
-            <input name='first-name' class='input-field' id='first-name'>
-            <input name='last-name' class='input-field' id='last-name'>
+        <div class='right-area'>
+            <div class='input-container'>
+                <span class='input-label' id='first-name-label'>
+                    Name:
+                </span>
+                <input name='first-name' class='input-field' id='first-name'>
+            </div>
+            <div class='input-container'>
+                <span class='input-label' id='last-name-label'>
+                    Surname:
+                </span>
+                <input name='last-name' class='input-field' id='last-name'>
+            </div>
         </div>
         <div id='crud-btn-container'>
             <button class='crud-btn' id='create-btn'>Create</button>
@@ -28,7 +37,6 @@
             <button class='crud-btn' id='delete-btn'>Delete</button>
         </div>
     </div>
-
 
     <script src='main.js'></script>
 </body>
