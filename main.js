@@ -101,6 +101,8 @@ function filterEntries () {
     clearRolodex();
     rolodex.forEach(function(entry, index) {
         var fullName = entry.lastName + ', ' + entry.firstName;
+        var filterCaps = filt.value.toLowerCase();
+        
         if (fullName.includes(filter.value)) {
             appendPeople(entry, index)
         }
