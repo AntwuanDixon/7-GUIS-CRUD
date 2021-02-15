@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'></link>
+    <title>CRUD</title>
+</head>
+<body>
+    <div class='listbox-area'>
+        <div class='left-area'>
+            <span id='people-header'>
+                Filter
+            </span>
+            <input class='filter' name='filter'>
+            <select id='rolodex-list' name="rolodex-list" size='5'>
+                <option class='person-entry' value='person-0'>Person 0</option>
+
+            </select>
+        </div>
+        <div id='input-container'>
+            <input name='first-name' class='input-field' id='first-name'>
+            <input name='last-name' class='input-field' id='last-name'>
+        </div>
+        <div id='crud-btn-container'>
+            <button class='crud-btn' id='create-btn'>Create</button>
+            <button class='crud-btn' id='update-btn'>Update</button>
+            <button class='crud-btn' id='delete-btn'>Delete</button>
+        </div>
+    </div>
+
+
+    <script src='main.js'></script>
+</body>
+</html>
